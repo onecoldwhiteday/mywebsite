@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Amatic SC'; /* Гарнитура шрифта */
-    src: url(../fonts/AmaticSC-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: 'Amatic SC'; 
+    src: url(../fonts/AmaticSC-Regular.ttf);
    }
    @font-face {
-    font-family: 'Amatic SC Bold'; /* Гарнитура шрифта */
-    src: url(../fonts/AmaticSC-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-family: 'Amatic SC Bold';
+    src: url(../fonts/AmaticSC-Bold.ttf);
    }
 
 body {
