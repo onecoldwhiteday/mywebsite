@@ -13,6 +13,14 @@ body {
     padding: 0;
 }
 
+.visually_hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
  /* LOGO */
 
 .logo {
@@ -22,6 +30,7 @@ body {
     color:white;
     letter-spacing: 5px;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .logo_link {
@@ -49,6 +58,12 @@ body {
     flex-direction: column;
   }
 
+  .slide_title {
+      color: white;
+      font-family: 'Amatic SC', cursive;
+      font-size: 64px;
+  }
+
   .me_img {
       border-radius: 50%;
       margin-top: 40px;
@@ -61,6 +76,91 @@ body {
     text-align: center;
     letter-spacing: 2px;
   }
+
+  .skills_list {
+      display: grid;
+      grid-template-columns: repeat(4, 130px);
+      grid-template-rows: repeat(2, 130px);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      list-style: none;
+      padding-left: 0;
+  }
+
+  .skills_item {
+      position: relative;
+      background-size: cover;
+  }
+  .skills_item::before {
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      content: "";
+      background-size: cover;
+  }
+
+  .skill_html::before {
+    background-image: url(../icons/html.png);
+  }
+  .skill_css::before {
+    background-image: url(../icons/css.png);
+  }
+  .skill_js::before {
+    background-image: url(../icons/javascript.png);
+  }
+  .skill_git::before {
+    background-image: url(../icons/git.png);
+  }
+  .skill_sass::before {
+    background-image: url(../icons/sass.png);
+  }
+  .skill_svg::before {
+    background-image: url(../icons/svg-flat.png);    
+  }
+  .skill_ps::before {
+    background-image: url(../icons/photoshop.png);
+  }
+  .skill_bootstrap::before {
+    background-image: url(../icons/TwitterBootstrap.png);
+  }
+
+  .skills_item:hover {
+      transform: scale(1.2);
+      transition-duration: 0.3s; 
+  }
+
+
+  .contacts_list {
+      list-style: none;
+      padding-left: 0;
+  }
+  .contact {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    position: relative;
+  }
+  .contact_link::before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    left: -80px;
+    top: -10px;
+  }
+  .contact_link {
+      text-decoration: none;
+      color: white;
+  }
+  .contact_link:hover {
+     color: lightgrey;
+  }
+  .telegram::before {
+      background-image: url(../icons/tg.png);
+  }
+
+
+  /* SLIDER NAVIGATION */
 
   .slider_nav {
       position: absolute;
@@ -75,10 +175,13 @@ body {
       border: none;
   }
 
-  .slider_button:before {
+  .slider_button::before:hover {
+    color: lightgray;
+  }
+
+  .slider_button::before {
       position: absolute;
       color: white;
-      /* font-family: Swiss Siena, 'Arial'; */
       font-family: 'Amatic SC', cursive;
       font-size: 100px;
 
@@ -109,6 +212,7 @@ body {
       width: 200px;
       height: 64px;
       margin: 0 auto;
+      margin-top: 80px;
       padding-left: 0;
   }
 
