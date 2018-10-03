@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Amatic SC'; /* Гарнитура шрифта */
+    src: url(../fonts/AmaticSC-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Amatic SC Bold'; /* Гарнитура шрифта */
+    src: url(../fonts/AmaticSC-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+    background-color: #191818;
+    margin: 0;
+    padding: 0;
+}
+
+ /* LOGO */
+
+.logo {
+    margin-left: 50px;
+    font-family: 'Amatic SC Bold', 'Arial';
+    font-size: 55px;
+    color:white;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
+.logo_link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ /* SLIDER */
+
+  .presentation {
+      position: relative;
+  }
+
+  .slider {
+      height: 500px;
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px;
+  }
+
+  .slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .me_img {
+      border-radius: 50%;
+      margin-top: 40px;
+  }
+
+  .promo {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .slider_nav {
+      position: absolute;
+      top: 400px;
+  }
+
+
+  .slider_button {
+      position: relative;
+      background: none;
+      outline: none;
+      border: none;
+  }
+
+  .slider_button:before {
+      position: absolute;
+      color: white;
+      /* font-family: Swiss Siena, 'Arial'; */
+      font-family: 'Amatic SC', cursive;
+      font-size: 100px;
+
+  }
+
+  .prev:before {
+    content: "<";
+    left: -150px;
+  }
+
+  .prev[disabled],
+  .next[disabled] {
+      opacity: 0.5;
+  }
+
+  .next:before {
+      content: ">";
+      right: -630px;
+  }
+
+
+ /* FOOTER */
+
+  .social_networks {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      height: 64px;
+      margin: 0 auto;
+      padding-left: 0;
+  }
+
+
+  .github,
+  .vkontakte,
+  .linkedin {
+    position: relative;
+  }
+  .github::before,
+  .vkontakte::before,
+  .linkedin::before {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 50px;
+      left: -25px;;
+      background-size: cover;
+      
+  }
+
+  .github:hover,
+  .linkedin:hover,
+  .vkontakte:hover {
+    opacity: 0.5;
+}
+
+  .github::before {
+  background-image: url(../icons/GitHub.svg);
+  }
+
+  .linkedin::before {
+      background-image: url(../icons/LinkedIn.svg);
+  }
+
+  .vkontakte::before {
+      background-image: url(../icons/VK.svg);
+  }
+
+
+  @media (min-width: 1400px ) {
+    .slider {
+      width: 800px;
+    }
+
+    .next:before {
+        right: -920px;
+    }
+}
+
+
+ /* CHANGE SLIDES */
+
+ .hideMe {
+    display: none;
+  }
+
+.showMe {
+    display: flex;
+  }
