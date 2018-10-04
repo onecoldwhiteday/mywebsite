@@ -386,26 +386,6 @@ body {
   }
 
 
-  @media (min-width: 1400px ) {
-    .slider {
-      width: 800px;
-    }
-
-    .next:before {
-        right: -920px;
-    }
-   }
-
-   @media (max-width: 1024px) {
-       .skill:hover::after {
-           content: "";
-           border: none;
-           width: 1px;
-           height: 1px;
-       }
-   }
-
-
  /* CHANGE SLIDES */
 
  .hideMe {
