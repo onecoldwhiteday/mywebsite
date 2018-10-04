@@ -69,6 +69,11 @@ body {
       margin-top: 40px;
   }
 
+  .me_img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
   .promo {
     color: white;
     font-family: 'Amatic SC', cursive;
@@ -87,48 +92,71 @@ body {
       padding-left: 0;
   }
 
-  .skills_item {
-      position: relative;
-      background-size: cover;
-  }
-  .skills_item::before {
-      position: absolute;
+  .skill_image {
       width: 128px;
       height: 128px;
-      content: "";
-      background-size: cover;
+      position: relative;
   }
 
-  .skill_html::before {
-    background-image: url(../icons/html.png);
-  }
-  .skill_css::before {
-    background-image: url(../icons/css.png);
-  }
-  .skill_js::before {
-    background-image: url(../icons/javascript.png);
-  }
-  .skill_git::before {
-    background-image: url(../icons/git.png);
-  }
-  .skill_sass::before {
-    background-image: url(../icons/sass.png);
-  }
-  .skill_svg::before {
-    background-image: url(../icons/svg-flat.png);    
-  }
-  .skill_ps::before {
-    background-image: url(../icons/photoshop.png);
-  }
-  .skill_bootstrap::before {
-    background-image: url(../icons/TwitterBootstrap.png);
-  }
-
-  .skills_item:hover {
+  .skill_image:hover {
       transform: scale(1.2);
       transition-duration: 0.3s; 
   }
 
+  .skill {
+      position: relative;
+  }
+  .skill:hover::after {
+      display: inline-block;
+      width: 256px;
+      position: absolute;
+      color: white;
+      font-size: 25px;
+      padding: 10px;
+      font-family: 'Amatic SC', cursive;
+      border: 2px dashed white;
+      border-radius: 20px;
+  }
+  .skill_html:hover::after {
+    left: -200px;
+    top: -200px;
+    content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
+  }
+  .skill_css:hover::after {
+    left: -220px;
+    top: -220px;
+    content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
+  }
+  .skill_js:hover::after {
+    right: -220px;;
+    top: -200px;
+    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
+  }
+  .skill_photoshop:hover::after {
+    right: -200px;
+    top: -200px;
+    content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
+  }
+  .skill_svg:hover::after {
+    left: -320px;
+    bottom: -50px;
+    content: "SVG, familiar with this format of images, can edit any of them and create";
+  }
+  .skill_sass:hover::after {
+    bottom: -170px;
+    left: -250px;
+    content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
+  }
+  .skill_git:hover::after {
+    bottom: -160px;
+    right: -250px;
+    content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
+  }
+  .skill_bootstrap:hover::after {
+    right: -300px;
+    bottom: -50px;
+    content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
+  }
 
   .contacts_list {
       list-style: none;
@@ -138,6 +166,7 @@ body {
     font-family: 'Amatic SC', cursive;
     font-size: 32px;
     position: relative;
+    margin-bottom: 40px;
   }
   .contact_link::before {
     position: absolute;
@@ -155,10 +184,22 @@ body {
   .contact_link:hover {
      color: lightgrey;
   }
+  .contact:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+  }
   .telegram::before {
       background-image: url(../icons/tg.png);
   }
-
+  .gmail::before {
+      background-image: url(../icons/gmail.png);
+  }
+  .skype::before {
+      background-image: url(../icons/skype.png);
+  }
+  .phone::before {
+      background-image: url(../icons/phone.png);
+  }
 
   /* SLIDER NAVIGATION */
 
