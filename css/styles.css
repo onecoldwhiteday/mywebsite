@@ -49,6 +49,7 @@ body {
       width: 500px;
       margin: 0 auto;
       padding: 50px;
+
   }
 
   .slide {
@@ -63,6 +64,8 @@ body {
       font-family: 'Amatic SC', Palatino, Georgia, serif;
       font-size: 64px;
   }
+
+  /* PROMO SLIDE */
 
   .me_img {
       border-radius: 50%;
@@ -81,6 +84,8 @@ body {
     text-align: center;
     letter-spacing: 2px;
   }
+
+  /* SKILLS SLIDE */
 
   .skills_list {
       display: grid;
@@ -124,13 +129,13 @@ body {
     content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
   }
   .skill_css:hover::after {
-    left: -220px;
+    left: -250px;
     top: -200px;
     content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
   }
   .skill_js:hover::after {
-    right: -220px;;
-    top: -180px;
+    right: -250px;;
+    top: -200px;
     content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
   }
   .skill_photoshop:hover::after {
@@ -139,25 +144,105 @@ body {
     content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
   }
   .skill_svg:hover::after {
-    left: -295px;
-    bottom: -50px;
+    left: -150px;
+    bottom: -150px;
     content: "SVG, familiar with this format of images, can edit any of them and create";
   }
   .skill_sass:hover::after {
-    bottom: -150px;
-    left: -250px;
+    bottom: -165px;
+    left: -150px;
     content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
   }
   .skill_git:hover::after {
-    bottom: -150px;
-    right: -250px;
+    bottom: -165px;
+    right: -150px;
     content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
   }
   .skill_bootstrap:hover::after {
     width: 200px;
-    bottom: -150px;
+    bottom: -180px;
+    left: 30px;
     content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
   }
+
+  /* EMPLOYEMET HISTORY SLIDE */
+
+  .job {
+    align-self: flex-start;
+    margin-left: 120px;
+    color: white;
+    font-family: 'Amatic SC', Palatino, Georgia, serif;
+    text-align: left;
+    position: relative;
+    height: 250px;
+  }
+  .job::before {
+      position: absolute;
+      content: "";
+      background-size: cover;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+  }
+  .job_1::before {
+      background-image: url(../img/job2.jpg);
+      left: -110px;
+      top: 30px;
+  }
+  .job_2::before {
+    background-image: url(../img/job1.jpg);
+    left: -110px;
+    top: 30px;
+  }
+
+
+    .job:hover::before {
+        transform: scale(1.2);
+        transition-duration: 1s;
+    }
+
+  .job {
+      border-bottom: 2px dashed white;
+  }
+  
+
+  .experience_slide .slide_title {
+      margin-bottom: 0;
+  }
+
+  .experience_slide {
+      margin-top: -50px;
+  }
+
+  .job_1 {
+      margin-bottom: 30px;
+  }
+
+  .job_title {
+      font-size: 38px;
+  }
+
+  .job_description,
+  .job_terms {
+      font-size: 24px;
+  }
+  .job_position {
+    font-size: 32px;
+  }
+
+  .job_description {
+      position: relative;
+      letter-spacing: 1px;
+      width: 300px;
+      right: -350px;
+      top: -200px;
+  }
+
+  .company_link {
+    color: white;
+  }
+
+  /* CONTACTS SLIDE */
 
   .contacts_list {
       list-style: none;
@@ -229,7 +314,13 @@ body {
 
   }
 
-  .prev:before {
+  .prev::before,
+  .next::before {
+    width: 128px;
+    height: 128px;
+  }
+
+  .prev::before {
     content: "<";
     left: -150px;
   }
@@ -239,7 +330,7 @@ body {
       opacity: 0.5;
   }
 
-  .next:before {
+  .next::before {
       content: ">";
       right: -630px;
   }
@@ -254,7 +345,7 @@ body {
       width: 200px;
       height: 64px;
       margin: 0 auto;
-      margin-top: 80px;
+      margin-top: 120px;
       padding-left: 0;
   }
 
