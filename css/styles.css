@@ -111,50 +111,51 @@ body {
       width: 256px;
       position: absolute;
       color: white;
-      font-size: 25px;
+      font-size: 22px;
       padding: 10px;
+      letter-spacing: 1px;
       font-family: 'Amatic SC', cursive;
       border: 2px dashed white;
       border-radius: 20px;
   }
   .skill_html:hover::after {
     left: -200px;
-    top: -200px;
+    top: -180px;
     content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
   }
   .skill_css:hover::after {
     left: -220px;
-    top: -220px;
+    top: -200px;
     content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
   }
   .skill_js:hover::after {
     right: -220px;;
-    top: -200px;
+    top: -180px;
     content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
   }
   .skill_photoshop:hover::after {
     right: -200px;
-    top: -200px;
+    top: -180px;
     content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
   }
   .skill_svg:hover::after {
-    left: -320px;
+    left: -295px;
     bottom: -50px;
     content: "SVG, familiar with this format of images, can edit any of them and create";
   }
   .skill_sass:hover::after {
-    bottom: -170px;
+    bottom: -150px;
     left: -250px;
     content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
   }
   .skill_git:hover::after {
-    bottom: -160px;
+    bottom: -150px;
     right: -250px;
     content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
   }
   .skill_bootstrap:hover::after {
-    right: -300px;
-    bottom: -50px;
+    width: 200px;
+    bottom: -150px;
     content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
   }
 
@@ -302,7 +303,16 @@ body {
     .next:before {
         right: -920px;
     }
-}
+   }
+
+   @media (max-width: 1024px) {
+       .skill:hover::after {
+           content: "";
+           border: none;
+           width: 1px;
+           height: 1px;
+       }
+   }
 
 
  /* CHANGE SLIDES */
