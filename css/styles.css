@@ -24,15 +24,14 @@ body {
  /* LOGO */
 
 .logo {
-    margin-left: 50px;
     font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
-    font-size: 55px;
+    font-size: 48px;
+    width: 220px;
     color:white;
     letter-spacing: 5px;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    margin-top: 30px;
 }
-
 .logo_link {
     cursor: pointer;
     text-decoration: none;
@@ -45,10 +44,9 @@ body {
   }
 
   .slider {
-      height: 500px;
-      width: 500px;
+      width: 250px;
       margin: 0 auto;
-      padding: 50px;
+      margin-bottom: 50px;
 
   }
 
@@ -62,7 +60,7 @@ body {
   .slide_title {
       color: white;
       font-family: 'Amatic SC', Palatino, Georgia, serif;
-      font-size: 64px;
+      font-size: 32px;
   }
 
   /* PROMO SLIDE */
@@ -70,6 +68,8 @@ body {
   .me_img {
       border-radius: 50%;
       margin-top: 40px;
+      width: 128px;
+      height: 128px;
   }
 
   .me_img:hover {
@@ -80,7 +80,8 @@ body {
   .promo {
     color: white;
     font-family: 'Amatic SC', Palatino, Georgia, serif;
-    font-size: 32px;
+    font-size: 20px;
+    width: 200px;
     text-align: center;
     letter-spacing: 2px;
   }
@@ -89,17 +90,17 @@ body {
 
   .skills_list {
       display: grid;
-      grid-template-columns: repeat(4, 130px);
-      grid-template-rows: repeat(2, 130px);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-template-columns: repeat(2, 80px);
+      grid-template-rows: repeat(4, 80px);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
       list-style: none;
       padding-left: 0;
   }
 
   .skill_image {
-      width: 128px;
-      height: 128px;
+      width: 72px;
+      height: 72px;
       position: relative;
   }
 
@@ -123,7 +124,7 @@ body {
       border: 2px dashed white;
       border-radius: 20px;
   }
-  .skill_html:hover::after {
+  /* .skill_html:hover::after {
     left: -200px;
     top: -180px;
     content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
@@ -163,18 +164,17 @@ body {
     bottom: -180px;
     left: 30px;
     content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
-  }
+  } */
 
   /* EMPLOYEMET HISTORY SLIDE */
 
   .job {
     align-self: flex-start;
-    margin-left: 120px;
     color: white;
     font-family: 'Amatic SC', Palatino, Georgia, serif;
     text-align: left;
     position: relative;
-    height: 250px;
+    width: 250px;
   }
   .job::before {
       position: absolute;
@@ -186,13 +186,14 @@ body {
   }
   .job_1::before {
       background-image: url(../img/job2.jpg);
-      left: -110px;
-      top: 30px;
+      top: 30px;;
+      left: 140px;
+
   }
   .job_2::before {
     background-image: url(../img/job1.jpg);
-    left: -110px;
-    top: 30px;
+    top: 80px;
+    left: 160px;
   }
 
 
@@ -203,6 +204,7 @@ body {
 
   .job {
       border-bottom: 2px dashed white;
+      width: 230px;
   }
   
 
@@ -211,46 +213,93 @@ body {
   }
 
   .experience_slide {
-      margin-top: -50px;
+      width: 250px;
   }
 
   .job_1 {
       margin-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
   }
 
   .job_title {
-      font-size: 38px;
+      font-size: 30px;
   }
 
   .job_description,
   .job_terms {
-      font-size: 24px;
+      font-size: 20px;
   }
   .job_position {
-    font-size: 32px;
+    font-size: 25px;
+    font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
+    letter-spacing: 1px;
   }
 
   .job_description {
       position: relative;
       letter-spacing: 1px;
-      width: 300px;
-      right: -350px;
-      top: -200px;
+      width: 250px;
   }
 
   .company_link {
     color: white;
   }
 
+  /* PORTFOLIO SLIDE */
+
+  .project {
+      padding-left: 12px;
+      position: relative;
+  }
+
+  .project_desktop {
+      width: 230px;
+      margin-bottom: 5px;
+  }
+
+  .project_desktop:hover,
+  .project_tablet:hover,
+  .project_mobile:hover {
+      transform: scale(1.3);
+  }
+
+  .project_tablet {
+      width: 130px;
+      margin-top: -20px;
+  }
+
+  .project_mobile {
+    width: 96px;
+  }
+
+  .project_link {
+    text-decoration: none;
+    font-family: 'Amatic SC', Palatino, Georgia, serif;
+    color: white;
+    font-size: 18px;
+  }
+
+  .project_title {
+    font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .project_link:hover {
+      color: gray;
+  }
+
   /* CONTACTS SLIDE */
 
   .contacts_list {
       list-style: none;
-      padding-left: 0;
+      padding-left: 45px;
   }
   .contact {
     font-family: 'Amatic SC', Palatino, Georgia, serif;
-    font-size: 32px;
+    font-size: 22px;
     position: relative;
     margin-bottom: 40px;
   }
@@ -258,10 +307,9 @@ body {
     position: absolute;
     content: "";
     background-size: cover;
-    width: 64px;
-    height: 64px;
-    left: -80px;
-    top: -10px;
+    width: 32px;
+    height: 32px;
+    left: -40px;
   }
   .contact_link {
       text-decoration: none;
@@ -310,19 +358,20 @@ body {
       position: absolute;
       color: white;
       font-family: 'Amatic SC', Palatino, Georgia, serif;
-      font-size: 100px;
+      font-size: 80px;
 
   }
 
   .prev::before,
   .next::before {
-    width: 128px;
-    height: 128px;
+    width: 45px;
+    height: 45px;
   }
 
   .prev::before {
     content: "<";
-    left: -150px;
+    left: -40px;
+    top: -150px;
   }
 
   .prev[disabled],
@@ -332,7 +381,8 @@ body {
 
   .next::before {
       content: ">";
-      right: -630px;
+      right: -260px;
+      top: -150px;
   }
 
 
@@ -345,7 +395,6 @@ body {
       width: 200px;
       height: 64px;
       margin: 0 auto;
-      margin-top: 120px;
       padding-left: 0;
   }
 
@@ -360,8 +409,8 @@ body {
   .linkedin::before {
       position: absolute;
       content: '';
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       left: -25px;;
       background-size: cover;
       
@@ -395,3 +444,35 @@ body {
 .showMe {
     display: flex;
   }
+
+  /* MEDIA QUARIES */
+
+ /* TABLET */
+
+@media (min-width: 768px) {
+    .logo {
+        margin: 50px 0 0 50px;
+    }
+    .slider {
+        width: 500px;
+    }
+
+    .next::before {
+        content: ">";
+        right: -630px;
+    }
+    .prev::before {
+        content: "<";
+        left: -150px;
+    }
+
+    .promo {
+        font-size: 32px;
+    }
+}
+
+ /* DESKTOP */
+ 
+  @media (min-width: 1200px) {
+
+ }
