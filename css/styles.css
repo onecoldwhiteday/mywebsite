@@ -124,47 +124,7 @@ body {
       border: 2px dashed white;
       border-radius: 20px;
   }
-  /* .skill_html:hover::after {
-    left: -200px;
-    top: -180px;
-    content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
-  }
-  .skill_css:hover::after {
-    left: -250px;
-    top: -200px;
-    content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
-  }
-  .skill_js:hover::after {
-    right: -250px;;
-    top: -200px;
-    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
-  }
-  .skill_photoshop:hover::after {
-    right: -200px;
-    top: -180px;
-    content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
-  }
-  .skill_svg:hover::after {
-    left: -150px;
-    bottom: -150px;
-    content: "SVG, familiar with this format of images, can edit any of them and create";
-  }
-  .skill_sass:hover::after {
-    bottom: -165px;
-    left: -150px;
-    content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
-  }
-  .skill_git:hover::after {
-    bottom: -165px;
-    right: -150px;
-    content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
-  }
-  .skill_bootstrap:hover::after {
-    width: 200px;
-    bottom: -180px;
-    left: 30px;
-    content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
-  } */
+ 
 
   /* EMPLOYEMET HISTORY SLIDE */
 
@@ -496,6 +456,15 @@ body {
     .job {
         width: 490px;
     }
+
+    .experience_slide, .portfolio_slide {
+        position: relative;
+        top: -80px;
+    }
+    .contacts_slide {
+        position: relative; 
+        top: -30px;
+    }
     .job::before {
         width: 128px;
         height: 128px;
@@ -555,13 +524,29 @@ body {
  /* DESKTOP */
  
   @media (min-width: 1200px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
     .slider {
         width: 700px;
     }
 
     .next::before {
-        right: -750px;
+        right: -780px;
+        width: 140px;
+        height: 140px;
+        opacity: 0.1;
     }
+    .prev::before {
+        opacity: 0.1;
+        width: 140px;
+        height: 140px;
+        left: -120px;
+    }
+
+
 
     .experience_slide,
     .job {
@@ -616,4 +601,61 @@ body {
     .project_link {
         font-size: 28px;
     }
- }
+
+    .skill_html:hover::after {
+    left: -200px;
+    top: -180px;
+    content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
+  }
+  .skill_css:hover::after {
+    left: -250px;
+    top: -210px;
+    content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
+  }
+  .skill_js:hover::after {
+    right: -250px;;
+    top: -180px;
+    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
+  }
+  .skill_photoshop:hover::after {
+    right: -200px;
+    top: -180px;
+    content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
+  }
+  .skill_svg:hover::after {
+    left: -150px;
+    bottom: -150px;
+    content: "SVG, familiar with this format of images, can edit any of them and create";
+  }
+  .skill_sass:hover::after {
+    bottom: -165px;
+    left: -150px;
+    content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
+  }
+  .skill_git:hover::after {
+    bottom: -165px;
+    right: -150px;
+    content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
+  }
+  .skill_bootstrap:hover::after {
+    width: 200px;
+    bottom: -180px;
+    left: 30px;
+    content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
+  }
+
+  .skills_slide {
+      margin-bottom:  180px;
+    }
+
+   .next:hover::before,
+   .prev:hover::before{
+       transition-duration: 1s;
+       opacity: 1;
+    }
+    .slider:hover .prev::before,
+    .slider:hover .next::before {
+        transition-duration: 1s;
+        opacity: 1;
+    }
+}
