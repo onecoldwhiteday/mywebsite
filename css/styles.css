@@ -450,6 +450,11 @@ body {
  /* TABLET */
 
 @media (min-width: 768px) {
+
+    .main_header {
+        margin-bottom: 100px;
+    }
+
     .logo {
         margin: 50px 0 0 50px;
     }
@@ -457,17 +462,93 @@ body {
         width: 500px;
     }
 
+    .slide_title {
+        font-size: 45px;
+    }
+
     .next::before {
         content: ">";
-        right: -630px;
+        right: -550px;
+        top: 0;
     }
     .prev::before {
         content: "<";
-        left: -150px;
+        left: -80px;
+        top: 0;
     }
 
     .promo {
         font-size: 32px;
+        width: initial;
+    }
+
+    .skills_list {
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(2, 100px);
+    }
+
+    .skill_image {
+        width:90px;
+        height: 90px;
+    }
+
+    .experience_slide,
+    .job {
+        width: 490px;
+    }
+    .job::before {
+        width: 128px;
+        height: 128px;
+    }
+    .job_1::before {
+        top: 50px;
+        left: 270px;
+    }
+    .job_2::before {
+        top: 120px;
+        left: 280px;
+    }
+    .job_title {
+        font-size: 45px;
+    }
+    .job_terms {
+        font-size: 25px;
+    }
+    .job_position {
+        font-size: 38px;
+    }
+    .job_description {
+        font-size: 28px;
+        width: 420px;
+    }
+
+    .contacts_list {
+        margin-top: 30px;
+    }
+    .contact_link {
+        font-size: 32px;
+    }
+    .contact_link::before {
+        width: 50px;
+        height: 50px;
+        left: -70px;
+        top: -5px;
+    }
+
+    .project_desktop {
+        width: 460px;
+    }
+    .project_tablet {
+        width: 260px;
+    }
+    .project_mobile {
+        width: 192px;
+    }
+    .project_title {
+        font-size: 38px;
+    }
+    .project_link {
+        font-size: 28px;
     }
 }
 
