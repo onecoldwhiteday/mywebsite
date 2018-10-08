@@ -1,8 +1,0 @@
-Hi! I’m Kate and I’m experienced frontend developer. My primary specialization is psd 
-to html work. I’m proficient with html & css technologies ( including html5, css3 & jQuery,
- JS ), frameworks ( bootstrap, foundation, etc ) and methodologies ( BEM, HDD, etc ). 
- Familiar with all kind of pre-processors and assets builders like gulp.
-
-I always aim to deliver high quality result which implies clean and maintainable code, 
-pixel perfect and responsive layouts.
-

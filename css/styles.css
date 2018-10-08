@@ -24,15 +24,14 @@ body {
  /* LOGO */
 
 .logo {
-    margin-left: 50px;
     font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
-    font-size: 55px;
+    font-size: 48px;
+    width: 220px;
     color:white;
     letter-spacing: 5px;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    margin-top: 30px;
 }
-
 .logo_link {
     cursor: pointer;
     text-decoration: none;
@@ -45,11 +44,10 @@ body {
   }
 
   .slider {
-      height: 500px;
-      width: 500px;
+      width: 250px;
       margin: 0 auto;
-      padding: 50px;
-
+      margin-bottom: 50px;
+      
   }
 
   .slide {
@@ -62,7 +60,7 @@ body {
   .slide_title {
       color: white;
       font-family: 'Amatic SC', Palatino, Georgia, serif;
-      font-size: 64px;
+      font-size: 32px;
   }
 
   /* PROMO SLIDE */
@@ -70,6 +68,8 @@ body {
   .me_img {
       border-radius: 50%;
       margin-top: 40px;
+      width: 128px;
+      height: 128px;
   }
 
   .me_img:hover {
@@ -80,7 +80,8 @@ body {
   .promo {
     color: white;
     font-family: 'Amatic SC', Palatino, Georgia, serif;
-    font-size: 32px;
+    font-size: 20px;
+    width: 200px;
     text-align: center;
     letter-spacing: 2px;
   }
@@ -89,17 +90,17 @@ body {
 
   .skills_list {
       display: grid;
-      grid-template-columns: repeat(4, 130px);
-      grid-template-rows: repeat(2, 130px);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-template-columns: repeat(2, 80px);
+      grid-template-rows: repeat(4, 80px);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
       list-style: none;
       padding-left: 0;
   }
 
   .skill_image {
-      width: 128px;
-      height: 128px;
+      width: 72px;
+      height: 72px;
       position: relative;
   }
 
@@ -123,58 +124,17 @@ body {
       border: 2px dashed white;
       border-radius: 20px;
   }
-  .skill_html:hover::after {
-    left: -200px;
-    top: -180px;
-    content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
-  }
-  .skill_css:hover::after {
-    left: -250px;
-    top: -200px;
-    content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
-  }
-  .skill_js:hover::after {
-    right: -250px;;
-    top: -200px;
-    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
-  }
-  .skill_photoshop:hover::after {
-    right: -200px;
-    top: -180px;
-    content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
-  }
-  .skill_svg:hover::after {
-    left: -150px;
-    bottom: -150px;
-    content: "SVG, familiar with this format of images, can edit any of them and create";
-  }
-  .skill_sass:hover::after {
-    bottom: -165px;
-    left: -150px;
-    content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
-  }
-  .skill_git:hover::after {
-    bottom: -165px;
-    right: -150px;
-    content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
-  }
-  .skill_bootstrap:hover::after {
-    width: 200px;
-    bottom: -180px;
-    left: 30px;
-    content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
-  }
+ 
 
   /* EMPLOYEMET HISTORY SLIDE */
 
   .job {
     align-self: flex-start;
-    margin-left: 120px;
     color: white;
     font-family: 'Amatic SC', Palatino, Georgia, serif;
     text-align: left;
     position: relative;
-    height: 250px;
+    width: 250px;
   }
   .job::before {
       position: absolute;
@@ -186,13 +146,14 @@ body {
   }
   .job_1::before {
       background-image: url(../img/job2.jpg);
-      left: -110px;
-      top: 30px;
+      top: 30px;;
+      left: 140px;
+
   }
   .job_2::before {
     background-image: url(../img/job1.jpg);
-    left: -110px;
-    top: 30px;
+    top: 80px;
+    left: 160px;
   }
 
 
@@ -203,6 +164,7 @@ body {
 
   .job {
       border-bottom: 2px dashed white;
+      width: 230px;
   }
   
 
@@ -211,46 +173,93 @@ body {
   }
 
   .experience_slide {
-      margin-top: -50px;
+      width: 250px;
   }
 
   .job_1 {
       margin-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
   }
 
   .job_title {
-      font-size: 38px;
+      font-size: 30px;
   }
 
   .job_description,
   .job_terms {
-      font-size: 24px;
+      font-size: 20px;
   }
   .job_position {
-    font-size: 32px;
+    font-size: 25px;
+    font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
+    letter-spacing: 1px;
   }
 
   .job_description {
       position: relative;
       letter-spacing: 1px;
-      width: 300px;
-      right: -350px;
-      top: -200px;
+      width: 250px;
   }
 
   .company_link {
     color: white;
   }
 
+  /* PORTFOLIO SLIDE */
+
+  .project {
+      padding-left: 12px;
+      position: relative;
+  }
+
+  .project_desktop {
+      width: 230px;
+      margin-bottom: 5px;
+  }
+
+  .project_desktop:hover,
+  .project_tablet:hover,
+  .project_mobile:hover {
+      transform: scale(1.3);
+  }
+
+  .project_tablet {
+      width: 130px;
+      margin-top: -20px;
+  }
+
+  .project_mobile {
+    width: 96px;
+  }
+
+  .project_link {
+    text-decoration: none;
+    font-family: 'Amatic SC', Palatino, Georgia, serif;
+    color: white;
+    font-size: 18px;
+  }
+
+  .project_title {
+    font-family: 'Amatic SC Bold', Palatino, Georgia, serif;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .project_link:hover {
+      color: gray;
+  }
+
   /* CONTACTS SLIDE */
 
   .contacts_list {
       list-style: none;
-      padding-left: 0;
+      padding-left: 45px;
   }
   .contact {
     font-family: 'Amatic SC', Palatino, Georgia, serif;
-    font-size: 32px;
+    font-size: 22px;
     position: relative;
     margin-bottom: 40px;
   }
@@ -258,10 +267,9 @@ body {
     position: absolute;
     content: "";
     background-size: cover;
-    width: 64px;
-    height: 64px;
-    left: -80px;
-    top: -10px;
+    width: 32px;
+    height: 32px;
+    left: -40px;
   }
   .contact_link {
       text-decoration: none;
@@ -310,19 +318,20 @@ body {
       position: absolute;
       color: white;
       font-family: 'Amatic SC', Palatino, Georgia, serif;
-      font-size: 100px;
+      font-size: 80px;
 
   }
 
   .prev::before,
   .next::before {
-    width: 128px;
-    height: 128px;
+    width: 45px;
+    height: 45px;
   }
 
   .prev::before {
     content: "<";
-    left: -150px;
+    left: -40px;
+    top: -150px;
   }
 
   .prev[disabled],
@@ -332,7 +341,8 @@ body {
 
   .next::before {
       content: ">";
-      right: -630px;
+      right: -260px;
+      top: -150px;
   }
 
 
@@ -345,7 +355,6 @@ body {
       width: 200px;
       height: 64px;
       margin: 0 auto;
-      margin-top: 120px;
       padding-left: 0;
   }
 
@@ -360,8 +369,8 @@ body {
   .linkedin::before {
       position: absolute;
       content: '';
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       left: -25px;;
       background-size: cover;
       
@@ -386,26 +395,6 @@ body {
   }
 
 
-  @media (min-width: 1400px ) {
-    .slider {
-      width: 800px;
-    }
-
-    .next:before {
-        right: -920px;
-    }
-   }
-
-   @media (max-width: 1024px) {
-       .skill:hover::after {
-           content: "";
-           border: none;
-           width: 1px;
-           height: 1px;
-       }
-   }
-
-
  /* CHANGE SLIDES */
 
  .hideMe {
@@ -415,3 +404,258 @@ body {
 .showMe {
     display: flex;
   }
+
+  /* MEDIA QUARIES */
+
+ /* TABLET */
+
+@media (min-width: 768px) {
+
+    .main_header {
+        margin-bottom: 100px;
+    }
+
+    .logo {
+        margin: 50px 0 0 50px;
+    }
+    .slider {
+        width: 500px;
+    }
+
+    .slide_title {
+        font-size: 45px;
+    }
+
+    .next::before {
+        content: ">";
+        right: -550px;
+        top: 0;
+    }
+    .prev::before {
+        content: "<";
+        left: -80px;
+        top: 0;
+    }
+
+    .promo {
+        font-size: 32px;
+        width: initial;
+    }
+
+    .skills_list {
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(2, 100px);
+    }
+
+    .skill_image {
+        width:90px;
+        height: 90px;
+    }
+
+    .experience_slide,
+    .job {
+        width: 490px;
+    }
+
+    .experience_slide, .portfolio_slide {
+        position: relative;
+        top: -80px;
+    }
+    .contacts_slide {
+        position: relative; 
+        top: -30px;
+    }
+    .job::before {
+        width: 128px;
+        height: 128px;
+    }
+    .job_1::before {
+        top: 50px;
+        left: 270px;
+    }
+    .job_2::before {
+        top: 120px;
+        left: 280px;
+    }
+    .job_title {
+        font-size: 45px;
+    }
+    .job_terms {
+        font-size: 25px;
+    }
+    .job_position {
+        font-size: 38px;
+    }
+    .job_description {
+        font-size: 28px;
+        width: 420px;
+    }
+
+    .contacts_list {
+        margin-top: 30px;
+    }
+    .contact_link {
+        font-size: 32px;
+    }
+    .contact_link::before {
+        width: 50px;
+        height: 50px;
+        left: -70px;
+        top: -5px;
+    }
+
+    .project_desktop {
+        width: 460px;
+    }
+    .project_tablet {
+        width: 260px;
+    }
+    .project_mobile {
+        width: 192px;
+    }
+    .project_title {
+        font-size: 38px;
+    }
+    .project_link {
+        font-size: 28px;
+    }
+}
+
+ /* DESKTOP */
+ 
+  @media (min-width: 1200px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .slider {
+        width: 700px;
+    }
+
+    .next::before {
+        right: -780px;
+        width: 140px;
+        height: 140px;
+        opacity: 0.1;
+    }
+    .prev::before {
+        opacity: 0.1;
+        width: 140px;
+        height: 140px;
+        left: -120px;
+    }
+
+
+
+    .experience_slide,
+    .job {
+        width: 680px;
+    }
+    .experience_slide {
+        margin-bottom: -90px;
+        position: relative;
+        top: -100px;
+    }
+    .job::before {
+        width: 80px;
+        height: 80px;
+    }
+    .job_1::before {
+        left: 180px;
+        top: 110px;
+    }
+    .job_2::before {
+        left: 180px;
+    }
+    .job_position {
+        font-size: 32px;
+    }
+    .job_description {
+        position: absolute;
+        left: 340px;
+        top: 80px;
+        width: 350px;
+    }
+
+    .portfolio_slide {
+        width: 400px;
+        position: relative;
+        top: -120px;
+        left: 150px;
+        margin-bottom: -145px;
+    }
+
+    .project_desktop {
+        width: 420px;
+    }
+    .project_tablet {
+        width: 237px;
+    }
+    .project_mobile {
+        width: 176px;
+    }
+    .project_title {
+        font-size: 38px;
+    }
+    .project_link {
+        font-size: 28px;
+    }
+
+    .skill_html:hover::after {
+    left: -200px;
+    top: -180px;
+    content: "HTML, I use specification, in some projects had to use preprocessor(pug). Also worked with BEM - component-based method";
+  }
+  .skill_css:hover::after {
+    left: -250px;
+    top: -210px;
+    content: "CSS, I'm understand CSS-animation, use flex-box and CSS-grid for layout, media quaries for adaptivity, autoprefixer for cross-browser compatibility";
+  }
+  .skill_js:hover::after {
+    right: -250px;;
+    top: -180px;
+    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
+  }
+  .skill_photoshop:hover::after {
+    right: -200px;
+    top: -180px;
+    content: "PhotoShop, I work mostly with PSD-layouts, can cut pics all formates from it and get all information about scales, fonts, colors etc.  ";
+  }
+  .skill_svg:hover::after {
+    left: -150px;
+    bottom: -150px;
+    content: "SVG, familiar with this format of images, can edit any of them and create";
+  }
+  .skill_sass:hover::after {
+    bottom: -165px;
+    left: -150px;
+    content: "SASS, It's become handy in large projects to automatise some processes by mixins and variables. I used it in common with BEM"
+  }
+  .skill_git:hover::after {
+    bottom: -165px;
+    right: -150px;
+    content: "Git, I can work with it in terminal or desktop client, know most of git commands, use GitHub and BitBucket" 
+  }
+  .skill_bootstrap:hover::after {
+    width: 200px;
+    bottom: -180px;
+    left: 30px;
+    content: "Bootstrap, I use it in small project or if pixel-perfect is not important, in other cases prefer pure CSS with flexbox or grid layout";
+  }
+
+  .skills_slide {
+      margin-bottom:  180px;
+    }
+
+   .next:hover::before,
+   .prev:hover::before{
+       transition-duration: 1s;
+       opacity: 1;
+    }
+    .slider:hover .prev::before,
+    .slider:hover .next::before {
+        transition-duration: 1s;
+        opacity: 1;
+    }
+}
