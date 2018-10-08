@@ -524,11 +524,7 @@ body {
  /* DESKTOP */
  
   @media (min-width: 1200px) {
-
-    body {
-        overflow-y: hidden;
-    }
-
+      
     .slider {
         width: 700px;
     }
