@@ -611,7 +611,7 @@ body {
   .skill_js:hover::after {
     right: -250px;;
     top: -180px;
-    content: "JavaScript, I can interact with DOM by JS and make not complicated scripts and functions. Learn it intesively"
+    content: "JavaScript, I work with native JS, can create not complicated scripts. Learn it intesively"
   }
   .skill_photoshop:hover::after {
     right: -200px;
